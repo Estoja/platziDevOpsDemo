@@ -37,17 +37,17 @@ jobs:
       # run tests!
       #- run: yarn test
 
-  test:
-    docker:
-      - image: circlecli/node:9.5.0
-    steps:
-      - checkout
-      - run:
-        name: npmTest
-        command: npm test
-      - run:
-        name: yarnTest
-        command: yarn test
+  # test:
+  #   docker:
+  #     - image: circlecli/node:9.5.0
+  #   steps:
+  #     - checkout
+  #     - run:
+  #       name: npmTest
+  #       command: npm test
+  #     - run:
+  #       name: yarnTest
+  #       command: yarn test
   workflows:
     version: 2
     build_and_tests:
